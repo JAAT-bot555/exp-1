@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Builder Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #4a69bd;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3b55a0;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Resume Builder Form</h1>
+
+    <form>
+        <!-- Personal Details -->
+        <label>Full Name</label>
+        <input type="text" value="Anmol Thakur" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Phone</label>
+        <input type="tel" placeholder="Enter your phone number">
+
+        <label>Address</label>
+        <textarea placeholder="Enter your address"></textarea>
+
+        <!-- Education -->
+        <label>Highest Qualification</label>
+        <select>
+            <option>10th</option>
+            <option>12th</option>
+            <option>Diploma</option>
+            <option>Bachelor's</option>
+            <option>Master's</option>
+        </select>
+
+        <label>College/School Name</label>
+        <input type="text" placeholder="Enter institution name">
+
+        <!-- Skills -->
+        <label>Skills</label>
+        <textarea placeholder="e.g. HTML, CSS, JavaScript"></textarea>
+
+        <!-- Experience -->
+        <label>Work Experience</label>
+        <textarea placeholder="Describe your experience"></textarea>
+
+        <!-- Projects -->
+        <label>Projects</label>
+        <textarea placeholder="Mention your projects"></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Generate Resume</button>
+    </form>
+</div>
+
+</body>
+</html>
